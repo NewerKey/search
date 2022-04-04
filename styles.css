@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+input {
+  font-size: 1rem;
+  width: 50%;
+  border-radius: 20px;
+}
+
+.user-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.3rem;
+  margin-top: 1rem;
+}
+
+.card {
+  border: 0.5px solid rgb(200, 197, 197);
+  border-radius: 10px;
+  background-color: white;
+  padding: 0.5rem;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card > .header {
+  margin-bottom: 0.25rem;
+}
+
+.card > .body {
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.hide {
+  display: none;
+}
